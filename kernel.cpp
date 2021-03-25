@@ -5,7 +5,7 @@ void printf(char* str) {
     }
 }
 
-void kernelMain(void* multiboot_structure, unsigned int magicnumber) {
-    printf("Hello world!");
+extern "C" void kernelMain(void* multiboot_structure, unsigned int magicnumber) {
+    printf((char*)"Hello world!");
     while (1);
 }
