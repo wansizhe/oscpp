@@ -14,4 +14,6 @@ gcc test.c -o test -fno-pie -no-pie
 file test
 objdump -d test
 nm test
+
+make mykernel.bin
 ```
